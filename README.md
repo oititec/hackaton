@@ -30,86 +30,99 @@ A seguir, são apresentadas as possíveis saídas para os tipos de documentos es
 1. CNH (Carteira Nacional de Habilitação)
 ```json
 {
-  "documentType": "CNH",
-  "name": "Nome Completo do Condutor",
-  "cnhNumber": "Número do Registro da CNH composto por 11 caracteres",
-  "rgNumber": "Número do Documento de Identidade utilizado para CNH",
-  "rgIssuingAuthority": "Órgão Expedidor (ex: SSP/SP)",
-  "cpfNumber": "Número do CPF",
-  "birthDate": "Data de Nascimento (formato YYYY-MM-DD)",
-  "fatherName": "Nome do Pai (se visível)",
-  "motherName": "Nome da Mãe (se visível)",
-  "placeOfBirth": "Cidade/Estado de Naturalidade (se visível)",
-  "issuingAuthority": "Órgão Emissor (ex: SSP/MG, DETRAN/MG)",
-  "issueDate": "Data de Emissão da CNH (formato YYYY-MM-DD)",
-  "validUntil": "Data de Validade da CNH (formato YYYY-MM-DD)",
-  "firstLicenseDate": "Data da Primeira Habilitação (formato YYYY-MM-DD)",
-  "category": "Categoria da Habilitação com no máximo duas siglas",
-  "stateOfDocIdentity": "UF do Documento de Identidade",
-  "placeOfIssue": "Local de Emissão (Cidade/UF)",
-  "renach": "Número do RENACH (Fica no verso do documento)",
-  "gender": "M OU F",
-  "nationality": "Nacionalidade"
+   "success": true,
+   "data": {
+       "extracted_data": {
+          "name": "Nome Completo do Condutor",
+          "cnhNumber": "Número do Registro da CNH composto por 11 caracteres",
+          "rgNumber": "Número do Documento de Identidade utilizado para CNH",
+          "rgIssuingAuthority": "Órgão Expedidor (ex: SSP/SP)",
+          "cpfNumber": "Número do CPF",
+          "birthDate": "Data de Nascimento (formato YYYY-MM-DD)",
+          "fatherName": "Nome do Pai (se visível)",
+          "motherName": "Nome da Mãe (se visível)",
+          "placeOfBirth": "Cidade/Estado de Naturalidade (se visível)",
+          "issuingAuthority": "Órgão Emissor (ex: SSP/MG, DETRAN/MG)",
+          "issueDate": "Data de Emissão da CNH (formato YYYY-MM-DD)",
+          "validUntil": "Data de Validade da CNH (formato YYYY-MM-DD)",
+          "firstLicenseDate": "Data da Primeira Habilitação (formato YYYY-MM-DD)",
+          "category": "Categoria da Habilitação com no máximo duas siglas",
+          "stateOfDocIdentity": "UF do Documento de Identidade",
+          "placeOfIssue": "Local de Emissão (Cidade/UF)",
+          "renach": "Número do RENACH (Fica no verso do documento)",
+          "gender": "M OU F",
+          "nationality": "Nacionalidade"
+        }
+    }
 }
 ```
 
 2. CIN (Carteira de Identidade Nacional)
 ```json
 {
-  "documentType": "CIN",
-  "name": "Nome Completo da Pessoa",
-  "rgNumber": "Número do RG",
-  "state": "Sigla do Estado (ex: MG)",
-  "issuingAuthority": "Órgão Expedidor (ex: SSP/SP)",
-  "issueDate": "Data de Emissão (formato YYYY-MM-DD)",
-  "cpfNumber": "Número do CPF (se visível)",
-  "birthDate": "Data de Nascimento (formato YYYY-MM-DD)",
-  "fatherName": "Nome do Pai (se visível)",
-  "motherName": "Nome da Mãe (se visível)",
-  "placeOfBirth": "Cidade/Estado de Naturalidade (se visível)",
-  "civilRegistry": "Informações do Registro Civil",
-  "electorTitle": "Número do Título de Eleitor",
-  "ctpsNumber": "Número da Carteira de Trabalho",
-  "ctpsSeries": "Série da CTPS",
-  "ctpsUF": "UF de Emissão da CTPS",
-  "nisPispasep": "Número NIS/PIS/PASEP",
-  "professionalID": "Identidade Profissional",
-  "militaryCertificate": "Número do Certificado Militar",
-  "gender": "M OU F",
-  "nationality": "Brasileira",
-  "directorSignature": "Assinatura do Diretor do Órgão Expedidor",
-  "fingerprint": "Indicação da Impressão Digital",
-  "documentVersion": "Indicação da Via do Documento"
+   "success": true,
+   "data": {
+       "extracted_data": {
+          "name": "Nome Completo da Pessoa",
+          "rgNumber": "Número do RG",
+          "state": "Sigla do Estado (ex: MG)",
+          "issuingAuthority": "Órgão Expedidor (ex: SSP/SP)",
+          "issueDate": "Data de Emissão (formato YYYY-MM-DD)",
+          "cpfNumber": "Número do CPF (se visível)",
+          "birthDate": "Data de Nascimento (formato YYYY-MM-DD)",
+          "fatherName": "Nome do Pai (se visível)",
+          "motherName": "Nome da Mãe (se visível)",
+          "placeOfBirth": "Cidade/Estado de Naturalidade (se visível)",
+          "civilRegistry": "Informações do Registro Civil",
+          "electorTitle": "Número do Título de Eleitor",
+          "ctpsNumber": "Número da Carteira de Trabalho",
+          "ctpsSeries": "Série da CTPS",
+          "ctpsUF": "UF de Emissão da CTPS",
+          "nisPispasep": "Número NIS/PIS/PASEP",
+          "professionalID": "Identidade Profissional",
+          "militaryCertificate": "Número do Certificado Militar",
+          "gender": "M OU F",
+          "nationality": "Brasileira",
+          "directorSignature": "Assinatura do Diretor do Órgão Expedidor",
+          "fingerprint": "Indicação da Impressão Digital",
+          "documentVersion": "Indicação da Via do Documento"
+        }
+    }
 }
 ```
 
 3. RG (Registro Geral)
 ```json
 {
-  "documentType": "RG",
-  "name": "Nome Completo da Pessoa",
-  "rgNumber": "Número do RG",
-  "state": "Sigla do Estado (ex: MG)",
-  "issuingAuthority": "Órgão Expedidor (ex: SSP/SP)",
-  "issueDate": "Data de Emissão (formato YYYY-MM-DD)",
-  "cpfNumber": "Número do CPF (se visível)",
-  "birthDate": "Data de Nascimento (formato YYYY-MM-DD)",
-  "fatherName": "Nome do Pai (se visível)",
-  "motherName": "Nome da Mãe (se visível)",
-  "placeOfBirth": "Cidade/Estado de Naturalidade (se visível)",
-  "civilRegistry": "Informações do Registro Civil",
-  "electorTitle": "Número do Título de Eleitor",
-  "ctpsNumber": "Número da Carteira de Trabalho",
-  "ctpsSeries": "Série da CTPS",
-  "ctpsUF": "UF de Emissão da CTPS",
-  "nisPispasep": "Número NIS/PIS/PASEP",
-  "professionalID": "Identidade Profissional",
-  "militaryCertificate": "Número do Certificado Militar",
-  "gender": "M OU F",
-  "nationality": "Brasileira",
-  "directorSignature": "Assinatura do Diretor do Órgão Expedidor",
-  "fingerprint": "Indicação da Impressão Digital",
-  "documentVersion": "Indicação da Via do Documento"
+   "success": true,
+   "data": {
+       "extracted_data": {
+          "documentType": "RG",
+          "name": "Nome Completo da Pessoa",
+          "rgNumber": "Número do RG",
+          "state": "Sigla do Estado (ex: MG)",
+          "issuingAuthority": "Órgão Expedidor (ex: SSP/SP)",
+          "issueDate": "Data de Emissão (formato YYYY-MM-DD)",
+          "cpfNumber": "Número do CPF (se visível)",
+          "birthDate": "Data de Nascimento (formato YYYY-MM-DD)",
+          "fatherName": "Nome do Pai (se visível)",
+          "motherName": "Nome da Mãe (se visível)",
+          "placeOfBirth": "Cidade/Estado de Naturalidade (se visível)",
+          "civilRegistry": "Informações do Registro Civil",
+          "electorTitle": "Número do Título de Eleitor",
+          "ctpsNumber": "Número da Carteira de Trabalho",
+          "ctpsSeries": "Série da CTPS",
+          "ctpsUF": "UF de Emissão da CTPS",
+          "nisPispasep": "Número NIS/PIS/PASEP",
+          "professionalID": "Identidade Profissional",
+          "militaryCertificate": "Número do Certificado Militar",
+          "gender": "M OU F",
+          "nationality": "Brasileira",
+          "directorSignature": "Assinatura do Diretor do Órgão Expedidor",
+          "fingerprint": "Indicação da Impressão Digital",
+          "documentVersion": "Indicação da Via do Documento"
+        }
+    }
 }
 ```
 
